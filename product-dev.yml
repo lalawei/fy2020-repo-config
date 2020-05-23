@@ -1,2 +1,11 @@
 server:
   port: 9001
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+      profile: dev
