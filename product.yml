@@ -1,12 +1,6 @@
 server:
   port: 9010
 
-spring:
-  rabbitmq:
-    host: 121.36.21.66
-    port: 5672
-    username: root
-    password: Qinfo20180507
     
-env: prod
+env: p1
 
