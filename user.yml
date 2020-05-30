@@ -5,7 +5,6 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/shopping? characterEncoding=utf8&serverTimezone=Asia/Shanghai
       username: root
@@ -37,3 +36,6 @@ redis:
   redisPort: 6379
   redisPassword: zwredis
   timeout: 1000
+  
+resetpassword:
+  timeout: 60
