@@ -33,5 +33,5 @@ spring:
     username: root
     password: Qinfo20180507
 mybatis:
-  mapper-locations: classpath*:com/neuedu/product/mapper/*Mapper.xml
+  mapper-locations: classpath*:com/neuedu/pay/mapper/*Mapper.xml
   config-location: classpath:mybatis-config.xml
