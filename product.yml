@@ -15,6 +15,18 @@ spring:
       min-idle: 1
       test-on-borrow: true
       test-on-return: true
+  redis:
+    database: 0
+    host: 121.36.21.66
+    port: 6379
+    password: zwredis
+    jedis:
+      pool:
+        max-active: 1
+        max-wait: -1
+        max-idle: 10
+        min-idle: 2
+    timeout: 1000
   rabbitmq:
     host: 121.36.21.66
     port: 5672
@@ -24,19 +36,6 @@ mybatis:
   mapper-locations: classpath*:com/neuedu/product/mapper/*Mapper.xml
   config-location: classpath:mybatis-config.xml
   
-redis:
-  maxTotal: 8
-  maxIdle: 8
-  minIdle: 0
-  blockWhenExhausted: true
-  maxWaitMillis: 10000
-  testOnBorrow: true
-  testOnReturn: true
-  jmxEnabled: true
-  redisHost: 121.36.21.66
-  redisPort: 6379
-  redisPassword: zwredis
-  timeout: 1000
-    
+
 env: p1
 
